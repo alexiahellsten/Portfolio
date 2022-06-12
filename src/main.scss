@@ -1,0 +1,274 @@
+@import '_variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 12pt;
+    font-family: "Karla", sans-serif;
+    background: $platinum-grey;
+    text-align: center;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $platinum-grey;
+  }
+
+  .container-intro {
+    color: $oxford-blue;
+    padding: 15px;
+  }
+
+  .img-container {
+    background-color: $white;
+    max-width: 600 px;
+    max-height: 350 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ 
+}
+  header {
+    margin: 20px;
+    padding: 50px;
+
+    & h1 {
+      font-size: 4rem;
+  }
+}
+
+  nav {
+    text-align: right;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  nav li {
+    float: none;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  
+  nav li a {
+    color: $oxford-blue;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    text-decoration: none;
+  }
+
+  footer {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: $oxford-blue;
+    
+    
+    p {
+      color: $white;
+      padding: 20px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 20px;
+    color: $oxford-blue;
+  }
+  
+  h2 {
+    color: $oxford-blue;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .h2-subheading {
+    color: $middle-purple;
+    padding: 10px;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    color: $oxford-blue;
+    text-align: center;
+  }
+
+  //LINK STYLING
+  a {
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before {
+    content: '';
+    background: $middle-purple;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+//LINK STYLING ENDS
+
+//SKILLSET STYLING BEGINS
+  #skillset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px;
+    background-color: $oxford-blue;
+    color: #fff;
+  }
+
+  .skillset-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: $oxford-blue;
+
+    h2 {
+      padding: 50px;
+      color: $white;
+    }
+
+    item1,
+    item2,
+    item3 {
+      padding: 50px;
+      margin: 50px;
+    }
+    li {
+      color: $middle-purple;
+      list-style: none;
+      padding: 5px;
+      font-size: 1.2rem;
+    }
+  }
+//SKILLSET STYLING ENDS
+
+// CARD STYLING BEGINS
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $platinum-grey;
+}
+
+.projects-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  background-color: $platinum-grey;
+}
+
+  .card {
+    box-shadow: 0 4px 8px 0 $shadow-grey;
+    transition: 0.3s;
+    background-color: $white;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 8px;
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 $shadow-grey;
+  }
+
+  .card-container {
+    padding: 2px 16px;
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+// CARD STYLING ENDS
+
+
+//MEDIA QUERIES
+  @media only screen and (min-width: 800px) {
+    main {
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav li {
+      float: none;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.6rem;
+    }  
+
+    .skillset-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+      
+    
+#projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+
+.projects-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+}

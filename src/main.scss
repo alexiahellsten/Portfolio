@@ -8,11 +8,12 @@
 
 body {
     width: 100%;
-    height: 100vh;
     font-size: 12pt;
-    font-family: "Karla", sans-serif;
-    background: $oxford-blue;
+    background: $bg-color;
     text-align: center;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 0.06em;
+    line-height: 1.56;
   }
 
   main {
@@ -22,16 +23,16 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: $oxford-blue;
+    background-color: $bg-color;
   }
 
   .container-intro {
-    color: $oxford-blue;
+    color: $text-color;
     padding: 15px;
   }
 
   .img-container {
-    background-color: $white;
+    background-color: $cards;
     max-width: 600 px;
     max-height: 350 px;
     display: flex;
@@ -46,6 +47,7 @@ body {
 
     & h1 {
       font-size: 4rem;
+      font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -64,7 +66,7 @@ body {
   }
   
   nav li a {
-    color: $white;
+    color: $nav-links;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -76,11 +78,9 @@ body {
   footer {
     margin-top: 10px;
     padding: 20px;
-    background-color: $oxford-blue;
-    
-    
+    background-color: $bg-color;
+
     p {
-      color: $white;
       padding: 20px;
     }
   }
@@ -88,13 +88,14 @@ body {
   h1 {
     text-align: center;
     margin-left: 20px;
-    color: $platinum-grey;
+    color: $heading-color;
   }
   
   h2 {
-    color: $platinum-grey;
+    color: $oxford-blue;
     font-size: 1.4em;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
 
   .h2-subheading {
@@ -104,7 +105,7 @@ body {
   }
   
   h3 {
-    color: $platinum-grey;
+    color: $heading-color;
     text-align: center;
   }
 
@@ -146,10 +147,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    padding: 100px;
-    background-color: $oxford-blue;
-    color: #fff;
+    // width: 80%;
+    // padding: 100px;
+    background-color: $bg-color;
+    color: $text-color;
   }
 
   .skillset-inner {
@@ -158,11 +159,12 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: $oxford-blue;
+    color: $text-color;
+    background-color: $bg-color;
 
     h2 {
-      padding: 50px;
-      color: $white;
+      padding: 40px;
+      color: $heading-color;
     }
 
     item1,
@@ -172,7 +174,7 @@ body {
       margin: 50px;
     }
     li {
-      color: $middle-purple;
+      color: $text-color;
       list-style: none;
       padding: 5px;
       font-size: 1.2rem;
@@ -187,7 +189,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: $oxford-blue;
+  background-color: $bg-color;
 }
 
 .projects-inner {
@@ -198,13 +200,13 @@ body {
   width: 100%;
   margin: 10px;
   padding: 20px;
-  background-color: $oxford-blue;
+  background-color: $bg-color;
 }
 
   .card {
     box-shadow: 0 4px 8px 0 $shadow-grey;
     transition: 0.3s;
-    background-color: $white;
+    background-color: $cards;
     padding: 20px;
     margin: 10px;
     width: 80%;
@@ -262,6 +264,11 @@ body {
       font-size: 1.6rem;
     }  
 
+    #skillset {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     .skillset-inner {
       display: flex;
       justify-content: center;
@@ -269,12 +276,13 @@ body {
       flex-direction: row;
       width: 100%;
     }
+
       
     
 #projects {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
@@ -284,7 +292,35 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  width: 90%;
+  width: 70%;
+}
+
+//SIDEBAR
+.project-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap:wrap;
+  padding: 10px;  
+  width: 20%;
+  box-shadow: 0 4px 8px 0 $shadow-grey;
+  transition: 0.3s;
+  background-color: $cards;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+//SIDEBAR TEXT
+.sidebar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;  
+  background-color: $accent-color;
 }
 
 .card {

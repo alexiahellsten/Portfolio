@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "sass src/main.scss:dist/main.css -w",
     "build": "npx parcel src/index.html",
-    "start" : "npm-run-all --parallel dev build"
+    "ts": "parcel build src/typescript/main.ts",
+    "start": "npm-run-all --parallel dev build ts"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +14,10 @@
   "description": "I created this portfolio to display the projects that I've created during my studies at Medieinstitutet, as well as some personal projects.",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
     "npm-run-all": "^4.1.5",
-    "parcel": "^2.3.2"
+    "parcel": "^2.3.2",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.3",

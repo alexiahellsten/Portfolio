@@ -75,16 +75,6 @@ body {
     text-decoration: none;
   }
 
-  footer {
-    margin-top: 10px;
-    padding: 20px;
-    background-color: $bg-color;
-
-    p {
-      padding: 20px;
-    }
-  }
-
   h1 {
     text-align: center;
     margin-left: 20px;
@@ -140,6 +130,66 @@ body {
   }
 //LINK STYLING ENDS
 
+//INTRO SECTION STYLING
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+.intro-inner {
+  margin: 10px;
+  padding: 10px;
+  background-color: $accent-color;
+  text-align: left;
+}
+
+//ABOUT SECTION STYLING
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.about-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: $text-color;
+  background-color: $bg-color;
+
+  #item1, 
+  #item2,
+  #item3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: $accent-color;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
 
 //SKILLSET STYLING BEGINS
   #skillset {
@@ -248,12 +298,26 @@ body {
   // }
 // CARD STYLING ENDS
 
+footer {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: $bg-color;
+
+  p {
+    padding: 20px;
+  }
+}
+
 
 //MEDIA QUERIES
   @media only screen and (min-width: 800px) {
     main {
       display: flex;
       flex-direction: row;
+    }
+
+    header {
+      min-height: 40vh;
     }
 
     nav li {
@@ -264,35 +328,120 @@ body {
       font-size: 1.6rem;
     }  
 
-    #skillset {
-      flex-direction: row;
-      flex-wrap: wrap;
+    // #skillset {
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    // }
+
+    // .skillset-inner {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: row;
+    //   width: 100%;
+    // }
+
+    
+
+//INTRO SECTION STYLING
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+.intro-inner {
+  margin: 10px;
+  padding: 10px;
+  background-color: $accent-color;
+  text-align: left;
+}
+
+.about-inner {
+  flex-direction: row;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+//SKILLSET STYLING BEGINS
+  #skillset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // width: 80%;
+    // padding: 100px;
+    background-color: $bg-color;
+    color: $text-color;
+  }
+
+  .skillset-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: $text-color;
+    background-color: $bg-color;
+
+    h2 {
+      padding: 40px;
+      color: $heading-color;
     }
 
-    .skillset-inner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      width: 100%;
+    item1,
+    item2,
+    item3 {
+      padding: 50px;
+      margin: 50px;
     }
+    li {
+      color: $text-color;
+      list-style: none;
+      padding: 5px;
+      font-size: 1.2rem;
+    }
+  }
+//SKILLSET STYLING ENDS
 
       
-    
+//PROJECT CONTAINER
 #projects {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  // padding: 20px;
+  width: 90%;
+  background-color: antiquewhite;
 }
 
 .projects-inner {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 70%;
+  background-color: black;
+  width: 90%;
 }
 
 //SIDEBAR
@@ -301,26 +450,32 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap:wrap;
-  padding: 10px;  
-  width: 20%;
-  box-shadow: 0 4px 8px 0 $shadow-grey;
-  transition: 0.3s;
-  background-color: $cards;
-  padding: 20px;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+  width: 30%;
   margin: 10px;
-  border-radius: 8px;
 }
 
 //SIDEBAR TEXT
 .sidebar-container {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  background-color: white;
+  width: 90%;
+}
+
+.sidebar-container ul {
+  list-style: none;
+}
+
+.project-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 10px;  
-  background-color: $accent-color;
+  flex-direction: row;
 }
 
 .card {

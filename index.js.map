@@ -1,0 +1,1 @@
+{"mappings":"AAAA,OAAO,CAAC,GAAG,CAAC,CAAa","sources":["src/typescript/main.ts"],"sourcesContent":["console.log(\"Hello world\");"],"names":[],"version":3,"file":"index.js.map"}

@@ -7,6 +7,7 @@
 }
 
 body {
+    margin: 0;
     width: 100%;
     font-size: 12pt;
     background: $bg-color;
@@ -15,6 +16,14 @@ body {
     letter-spacing: 0.06em;
     line-height: 1.56;
   }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,*::before,*::after {
+    box-sizing: inherit;
+  } 
 
   main {
     width: 100%;
@@ -27,7 +36,9 @@ body {
   }
 
   .container-intro {
-    color: $text-color;
+    width: 100%;
+    background-color: $oxford-blue;
+    color: $white;
     padding: 15px;
   }
 
@@ -131,31 +142,50 @@ body {
 //LINK STYLING ENDS
 
 //INTRO SECTION STYLING
-#intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  background-color: $bg-color;
-  color: $text-color;
+// #intro {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   width: 80%;
+//   background-color: $bg-color;
+//   color: $text-color;
+// }
+
+// .intro-container {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   flex-direction: row;
+//   width: 100%;
+//   color: $text-color;
+//   background-color: $bg-color;
+// }
+
+// .intro-inner {
+//   margin: 10px;
+//   padding: 10px;
+//   background-color: $accent-color;
+//   text-align: left;
+// }
+
+.svg-container {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+  h1 {
+    font-size: 5rem;
+    // margin: 7rem 1.25rem 2.5rem 1.25rem;
+  }
+  p {
+    font-size: 1.5rem;
+    // margin: 0 1.25rem 5rem 1.25rem;
+  }
 }
 
-.intro-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  color: $text-color;
-  background-color: $bg-color;
-}
-
-.intro-inner {
-  margin: 10px;
-  padding: 10px;
-  background-color: $accent-color;
-  text-align: left;
+.svg-container > svg {
+  display: block;
 }
 
 //ABOUT SECTION STYLING
@@ -298,10 +328,50 @@ ul {
   // }
 // CARD STYLING ENDS
 
+
+// FORM STYLING
+.form-container {
+display: flex;
+justify-content: center;
+align-items: center;
+// flex-direction: column;
+flex-wrap: nowrap;
+}
+
+.form-inner {
+width: 100%;
+}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+form {
+box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  box-shadow:0 0 10px 4px $platinum-grey;
+  border-radius: 5px;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 0.06rem;
+}
+
+button {
+  box-shadow:0 0 10px 4px $platinum-grey;
+  color: $white;
+  background-color: $button;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+
 footer {
-  margin-top: 10px;
-  padding: 20px;
-  background-color: $bg-color;
+  // height: 40vh; 
+  // background-color: $oxford-blue;
 
   p {
     padding: 20px;
@@ -344,32 +414,32 @@ footer {
     
 
 //INTRO SECTION STYLING
-#intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  background-color: $bg-color;
-  color: $text-color;
-}
+// #intro {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   width: 80%;
+//   background-color: $bg-color;
+//   color: $text-color;
+// }
 
-.intro-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  color: $text-color;
-  background-color: $bg-color;
-}
+// .intro-container {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   flex-direction: row;
+//   width: 100%;
+//   color: $text-color;
+//   background-color: $bg-color;
+// }
 
-.intro-inner {
-  margin: 10px;
-  padding: 10px;
-  background-color: $accent-color;
-  text-align: left;
-}
+// .intro-inner {
+//   margin: 10px;
+//   padding: 10px;
+//   background-color: $accent-color;
+//   text-align: left;
+// }
 
 .about-inner {
   flex-direction: row;
@@ -431,7 +501,7 @@ ul {
   align-items: center;
   // padding: 20px;
   width: 90%;
-  background-color: antiquewhite;
+  background-color: $bg-color;
 }
 
 .projects-inner {
@@ -440,7 +510,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: black;
+  background-color: $bg-color;
   width: 90%;
 }
 
@@ -483,5 +553,4 @@ ul {
   margin: 10px;
   flex-grow: 1;
 }
-
 }

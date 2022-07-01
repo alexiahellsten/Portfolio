@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "sass src/main.scss:dist/main.css -w",
-    "build": "npx parcel src/index.html",
+    "dev": "sass src/sass/main.scss:dist/main.css -w",
+    "build": "npx parcel src/pages/index.html",
     "ts": "parcel build src/typescript/main.ts",
     "start": "npm-run-all --parallel dev build ts"
   },

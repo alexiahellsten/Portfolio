@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexia Hellsten</title>
-    <link rel="stylesheet" href="../dist/main.css" />
+    <link rel="stylesheet" href="../../dist/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,9 +21,9 @@
   <nav>
     <ul>
       <li><a href="index.html">About</a></li>
-      <li><a href="/src/projects.html">Projects</a></li>
-      <li><a href="/src/contact.html">Contact</a></li>
-      <li><a href="/src/resume.html">CV</a></li>
+      <li><a href="/src/pages/projects.html">Projects</a></li>
+      <li><a href="/src/pages/contact.html">Contact</a></li>
+      <li><a href="/src/pages/resume.html">CV</a></li>
     </ul>
   </nav>
 
@@ -36,8 +36,26 @@
     <div class="card">
       <i class="fa-solid fa-user-tie-hair-long"></i>
       <div class="card-container">
-        <h4><b>Contact form</b></h4>
-        <p>and maybe some links!</p>
+        <!-- <h4><b>Contact form</b></h4> -->
+
+        <div class="form-container">
+        <div class="form-inner">
+        <form action="https://formsubmit.co/d831708b5dd442877f0c2a5defc85f5f" method="POST">
+          <input type="hidden" name="_subject" value="New Email!" required>
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Name" required>
+          <label for="email">Email</label>
+          <input type="email" name="name" placeholder="Email Address" required>
+          <label for="message">Message</label>
+          <input type="message" name="message" placeholder="Write your message here" required>
+          <input type="hidden" name="_next" value="https://localhost:1234/thankyou.html">
+          <input type="hidden" name="_autoresponse" value="Thank you for reaching out to me! I will try to get back to you as soon as possible.">
+          <div class="button">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+        </div>
+      </div>
       </div>
     </div>
 </div>

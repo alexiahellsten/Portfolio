@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+  </head>
+  <title>{{ title }}</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌞</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9604976d4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  {% include "partials/header.html" %}
+
+
+  {% include "partials/page-header.html" %}
+
+  <main tabindex="-1" id="main-content">
+  <section class="content">
+  {% block content %}
+  {% endblock %}
+  {{ content | safe}}
+  </section>
+  </main>
+
+  {% if homepage %}
+  <aside class="cta">
+    {% include "partials/cta.html" %}
+  </aside>
+  {% endif %}
+
+  {% include "partials/footer.html" %}
+  
+
+</body>
+</html>

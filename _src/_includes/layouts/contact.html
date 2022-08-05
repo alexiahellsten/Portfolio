@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexia Hellsten</title>
-    <link rel="stylesheet" href="../../dist/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9604976d4b.js" crossorigin="anonymous"></script>
-</head>
-<body>
+{% extends "layouts/base.html" %} 
 
-  <nav>
-    <ul>
-      <li><a href="index.html">About</a></li>
-      <li><a href="/src/pages/projects.html">Projects</a></li>
-      <li><a href="/src/pages/contact.html">Contact</a></li>
-      <li><a href="/src/pages/resume.html">CV</a></li>
-    </ul>
-  </nav>
-
-<main>
-
+{% block content %}
 <!--   CONTACT SECTION   -->
-  <section id="contact">
+<section id="contact">
     <h2 class="h2-subheading">Contact me</h2>
     <div class="projects-inner">
     <div class="card">
@@ -60,12 +32,4 @@
     </div>
 </div>
 </section>
-
-</main>
-
-<footer>
-<p>Copyright Alexia Hellsten - 2022</p>
-</footer>
-
-</body>
-</html>
+{% endblock %} 

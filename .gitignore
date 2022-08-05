@@ -1,4 +1,10 @@
 **/node_modules
-.parcel-cache/
-dist/
+src/_includes/css
+_site
 .package-lock.json
+.DS_Store
+.cache
+.DS_Store
+Thumbs.db
+.sass-cache
+.env

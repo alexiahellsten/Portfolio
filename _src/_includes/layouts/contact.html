@@ -2,34 +2,52 @@
 
 {% block content %}
 <!--   CONTACT SECTION   -->
-<section id="contact">
-    <h2 class="h2-subheading">Contact me</h2>
-    <div class="projects-inner">
-    <div class="card">
-      <i class="fa-solid fa-user-tie-hair-long"></i>
-      <div class="card-container">
-        <!-- <h4><b>Contact form</b></h4> -->
+<section id="section" class="section is-small">
+  <div class="container">
+      <div class="title-wrapper has-text-centered">
+          <h2 class="title h2-subheading">Contact me</h2>
+          <div class="divider is-centered"></div>
+      </div>
 
-        <div class="form-container">
-        <div class="form-inner">
-        <form action="https://formsubmit.co/d831708b5dd442877f0c2a5defc85f5f" method="POST">
-          <input type="hidden" name="_subject" value="New Email!" required>
-          <label for="name">Name</label>
-          <input type="text" name="name" placeholder="Name" required>
-          <label for="email">Email</label>
-          <input type="email" name="name" placeholder="Email Address" required>
-          <label for="message">Message</label>
-          <input type="message" name="message" placeholder="Write your message here" required>
-          <input type="hidden" name="_next" value="https://localhost:1234/thankyou.html">
-          <input type="hidden" name="_autoresponse" value="Thank you for reaching out to me! I will try to get back to you as soon as possible.">
-          <div class="button">
-            <button type="submit">Send</button>
+      <div class="content-wrapper">
+          <div class="columns">
+              <div class="column is-6 is-offset-3">
+                <form action="https://formsubmit.co/d831708b5dd442877f0c2a5defc85f5f" method="POST">
+                  <input type="hidden" name="_subject" value="New Email!" required>
+                      <div class="columns is-multiline">
+                          <div class="column is-6">
+                            <label for="firstname" class="is-hidden">First Name</label>
+                            <input type="text" class="input is-medium" name="firstname" placeholder="First Name *" required>
+                          </div>
+                          <div class="column is-6">
+                            <label for="lastname" class="is-hidden">Last Name</label>
+                            <input type="text" class="input is-medium" name="lastname" placeholder="Last Name*" required>
+                          </div>
+                          <div class="column is-6">
+                            <label for="email" class="is-hidden">Email</label>
+                            <input type="text" class="input is-medium" name="email" placeholder="Email Address*" required>
+                          </div>
+                          <div class="column is-6">
+                            <label for="company" class="is-hidden">Company</label>
+                            <input type="text" class="input is-medium" name="company" placeholder="Company">
+                          </div>
+                          <div class="column is-12">
+                            <label for="message" class="is-hidden">Message</label>
+                            <textarea class="textarea" name="message" rows="6" placeholder="Write your message here" required></textarea>
+                            <input type="hidden" name="_next" value="https://localhost:8080/thankyou.html">
+                            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to me! I will try to get back to you as soon as possible.">
+                          </div>
+                          <div class="column is-12">
+                              <div class="form-footer mt-10">
+                                  <button class="button cta primary-btn form-button">Send</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
           </div>
-        </form>
-        </div>
       </div>
-      </div>
-    </div>
-</div>
+  </div>
 </section>
+
 {% endblock %} 

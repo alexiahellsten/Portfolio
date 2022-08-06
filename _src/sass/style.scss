@@ -409,7 +409,7 @@ button {
 
 
 footer {
-  height: 40vh;
+  height: 15vh;
   color: $white;
   background-color: $oxford-blue;
   bottom: 0;
@@ -429,6 +429,16 @@ footer {
 
   header {
     min-height: 40vh;
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar > ul > li {
+    margin: 10px;
   }
 
   nav li {

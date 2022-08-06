@@ -4,6 +4,12 @@ title: "Alexia Hellsten"
 homepage: true
 introheading: "Hello! 🌞 I am"
 subheading: "A front end development student from Stockholm"
+imgUrl: ""
+social1: ""
+social2: ""
+social3: ""
+email: "lorem@ipsum.sit"
+ctaText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor, augue non molestie finibus, arcu dolor dignissim felis. 👋"
 ---
 
 This is text for the index page.

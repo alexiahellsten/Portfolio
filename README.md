@@ -1,3 +1,3 @@
-# Portfolio - 2022
+# Portfolio - 2024
 
-I created this portfolio to display the projects that I've created during my studies at Medieinstitutet, as well as some personal projects. It's still a work in progress and will be updated continously.
+I created this portfolio to display the projects I've created during my studies to become a developer. It's a work in progress.

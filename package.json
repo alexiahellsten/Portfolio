@@ -1,7 +1,7 @@
 {
   "name": "portfolio2022",
   "version": "1.0.0",
-  "description": "I created this portfolio to display the projects that I've created during my studies at Medieinstitutet, as well as some personal projects.",
+  "description": "I created this portfolio to display the projects I've created during my studies to become a developer. It's a work in progress.",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass --watch _src/sass:_site/css",

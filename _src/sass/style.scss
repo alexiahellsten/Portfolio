@@ -11,11 +11,11 @@ body {
   margin: 0;
   width: 100%;
   font-size: 12pt;
-  background: $bg-color;
   text-align: center;
   font-family: "Cabin", sans-serif;
   letter-spacing: 0.06em;
   line-height: 1.56;
+  background-color: $indigo;
 }
 
 html {
@@ -88,10 +88,10 @@ header {
   }
 }
 
-nav {
-  text-align: right;
-  margin: 10px;
-  padding: 20px;
+.navbar {
+  // box-shadow: 0 0 10px 4px $platinum-grey;
+  width: 100%;
+  background-color: $nav-bg;
 }
 
 nav li {
@@ -104,7 +104,7 @@ nav li {
 
 nav li a {
   color: $nav-links;
-  padding: 14px 16px;
+  padding: 14px 10px;
   text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ h2 {
 // }
 
 .h2-subheading {
-  color: $middle-purple;
+  color: $subheading-color;
   padding: 10px;
   font-size: 2rem;
 }
@@ -147,28 +147,28 @@ a {
   display: inline-block;
   padding: 5px 0;
   position: relative;
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
 }
 
-a:before {
-  content: '';
-  background: $middle-purple;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
+// a:before {
+//   content: '';
+//   background: $subheading-color;
+//   display: block;
+//   position: absolute;
+//   bottom: -3px;
+//   left: 0;
+//   width: 0;
+//   height: 3px;
+//   transition: all 0.3s ease-in-out;
+// }
 
-a:hover {
-  background-position: 0;
-}
+// a:hover {
+//   background-position: 0;
+// }
 
-a:hover::before {
-  width: 100%;
-}
+// a:hover::before {
+//   width: 100%;
+// }
 
 //LINK STYLING ENDS
 
@@ -322,18 +322,7 @@ ul {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 $shadow-grey;
-  transition: 0.3s;
-  background-color: $cards;
-  padding: 20px;
   margin: 10px;
-  width: 80%;
-  border-radius: 8px;
-
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 $shadow-grey;
 }
 
 .card-container {
@@ -397,7 +386,7 @@ input {
   letter-spacing: 0.06rem;
 }
 
-button {
+.button {
   color: $white;
   background-color: $button;
   border-radius: 5px;
@@ -408,11 +397,19 @@ button {
 }
 
 
+.hero-body {
+  background-color: $indigo;
+}
+
 footer {
   height: 15vh;
   color: $white;
-  background-color: $oxford-blue;
+  background-color: $footer-bg;
   bottom: 0;
+
+  .footer {
+    background-color: $footer-bg;
+  }
 
   p {
     padding: 20px;
@@ -434,7 +431,7 @@ footer {
 
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
   
   .navbar > ul > li {
@@ -542,68 +539,11 @@ footer {
     }
   }
 
-  //SKILLSET STYLING ENDS
-
-
-  //PROJECT CONTAINER
-  #projects {
+footer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    // padding: 20px;
-    width: 90%;
-    background-color: $bg-color;
-  }
-
-  .projects-inner {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    background-color: $bg-color;
-    width: 90%;
-  }
-
-  //SIDEBAR
-  .project-sidebar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: aquamarine;
-    width: 30%;
-    margin: 10px;
-  }
-
-  //SIDEBAR TEXT
-  .sidebar-container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    background-color: white;
-    width: 90%;
-  }
-
-  .sidebar-container ul {
-    list-style: none;
-  }
-
-  .project-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .card {
-    padding: 20px;
-    margin: 10px;
-    flex-grow: 1;
   }
 }

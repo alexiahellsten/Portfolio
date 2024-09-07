@@ -4,6 +4,9 @@ title: "Alexia Hellsten"
 homepage: true
 introheading: "Hello! 🌞 I am"
 subheading: "& I'm an aspiring developer from Stockholm"
+footerHeading: "Let's get in touch!"
+firstCol: "alexia.hellsten(at)gmail.com"
+secondCol: "Built with: 11ty, Nunjucks & Bulma"
 ---
 
 <!-- This is text for the index page.

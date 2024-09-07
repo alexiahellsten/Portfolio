@@ -1,4 +1,5 @@
-<nav class="navbar" role="navigation" aria-label="Primary">
+<section class="hero-section hero is-medium">
+  <nav class="navbar" role="navigation" aria-label="Primary">
   <ul class="nav-list">
     {% for item in navigation.items %}
     <li>
@@ -10,9 +11,7 @@
   </ul>
 </nav>
 
-
 <!-- {% if homepage %} -->
-<section class="hero-section">
   <header>
     <h3>{{ introheading }}</h3>
       <h1> {{ title }} </h1>
@@ -21,3 +20,21 @@
 </section>
 
 <!-- {% endif %} -->
+
+<!-- <section class="hero is-medium">
+  <div class="hero-head">
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item">
+              Blog Posts
+            </a>
+          </div>
+        </div>
+        </section> -->
+
